@@ -1,0 +1,98 @@
+
+:root {
+    --ff: "Montserrat", sans-serif;
+    --colorp: #f9f9f9;
+    --colora: #ffe537;
+    --colora2: #537fe7;
+    --colorbody: #1e1e1e;
+    --colors: #333;
+    --h2: bold 36px/48px var(--ff);
+    --p: 18px/30px var(--ff);
+    --transition: 0.3s ease-in-out;
+}
+
+body{
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header'
+    'menu main main main main main right'
+    'menu footer footer footer footer footer footer';
+    gap: 0;
+    background-color: #2196F3;
+    padding: 0;
+}
+
+.header-container{
+    position: sticky;
+    top: 0;
+    grid-area: header;
+    display: flex;
+
+    #right-header{
+        justify-content: right;
+    }
+    div{
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        padding-inline: 1em;
+        *{
+            margin-inline: 0.5em;
+        }
+    }
+    background: #333;
+    height: 10em;
+}
+
+.header-button{
+    padding: 1em;
+    border-radius: 0.5em;
+    background: grey;
+    text-decoration: none;
+}
+.header-button:hover{
+    cursor: pointer;
+    background: darkgrey;
+}
+
+#logo{
+    height: 8em;
+    width: 8em;
+}
+
+.menu-container{
+    position: sticky;
+    top: 10em;
+    grid-area: menu;
+    background: blueviolet;
+    overflow-y: scroll;
+    height: 50em;
+}
+
+.footer-container{
+    grid-area: footer;
+    height: 15em;
+    background: brown;
+}
+
+.right-container{
+    grid-area: right;
+    background: deeppink;
+}
+
+.ad-container{
+    display: block;
+    text-align: center;
+}
+
+.main-container{
+    grid-area: main;
+    height: 100em;
+    background: black;
+}
