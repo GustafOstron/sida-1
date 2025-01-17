@@ -50,11 +50,12 @@ body{
     height: 10em;
 }
 
-.header-button{
+.header-button,.header-button:visited{
     padding: 1em;
     border-radius: 0.5em;
     background: grey;
     text-decoration: none;
+    color: inherit;
 }
 .header-button:hover{
     cursor: pointer;
