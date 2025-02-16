@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Math tutorials</title>
+  <link href="AccountPagesStyle.css" rel="stylesheet">
+  <script src="accountSetupScripts.js"></script>
+  <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+</head>
+<body onload="setupRegister()">
+<div class="exit-button-wrapper"><a class="exit-button" href="/sida-1/index.html">X</a></div>
+<div>
+  <div class="register-container container">
+    <h2>Register</h2>
+    <form id="registerForm" method="post">
+      <label>Email</label>
+      <br>
+      <input type="email" id="email" placeholder="Email" required>
+      <span class="error" id="emailError"></span>
+      <br>
+      <label>Lösenord</label>
+      <br>
+      <input type="password" id="password" placeholder="Lösenord (min 6 tecken)" required minlength="6">
+      <span class="error" id="passwordError"></span>
+      <br>
+      <label>Bekräfta Lösenord</label>
+      <br>
+      <input type="password" id="confirmPassword" placeholder="Bekräfta lösenord" required>
+      <span class="error" id="confirmPasswordError"></span>
+      <br>
+      <label>År av Erfarenhet</label>
+      <br>
+      <input type="number" id="experience" placeholder="Antal år av erfarenhet" min="0" max="50">
+      <br>
+      <label>
+        <input type="checkbox" id="terms"> Jag godkänner villkoren
+      </label>
+      <span class="error" id="termsError"></span>
+      <br>
+      <select id="region">
+        <option value="EU/Afrika">EU/Afrika</option>
+        <option value="Amerika">Amerika</option>
+        <option value="Asien/Australien">Asien/Australien</option>
+      </select>
+      <br>
+      <br>
+      <button type="submit">Registrera</button>
+    </form>
+    <p class="success" id="successMessage"></p>
+  </div>
+</div>
+</body>
+</html>

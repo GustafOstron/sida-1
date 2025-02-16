@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Math tutorials</title>
+    <link href="AccountPagesStyle.css" rel="stylesheet">
+    <script src="accountSetupScripts.js"></script>
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+</head>
+<body onload="setupLogin()">
+<div class="exit-button-wrapper"><a class="exit-button" href="/sida-1/index.html">X</a></div>
+<div>
+    <div class="login-wrapper container">
+        <div>
+            <h2>Login</h2>
+            <form id="loginForm" method="post">
+                <label>Email</label>
+                <br>
+                <input type="email" id="email" placeholder="Email" required>
+                <span class="error" id="emailError"></span>
+                <br>
+                <label>Lösenord</label>
+                <br>
+                <input type="password" id="password" placeholder="Lösenord (min 6 tecken)" required minlength="6">
+                <span class="error" id="passwordError"></span>
+                <a onclick="alert('Too Bad')" class="forgot-password" >Forgot Password?</a> <br>
+                <span class="error" id="noAccountError"></span><br>
+                <button type="submit">Login</button>
+                <p></p>
+            </form>
+            <p class="success" id="successMessage"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

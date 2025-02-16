@@ -2,43 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Math tutorials</title>
     <link href="Style.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <link rel="import" href="components/ads.html" id="adTemplate">
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
 </head>
-<body>
+<body onload="setPage()">
     <div class="grid-container">
         <header class="header-container">
             <div id="left-header">
-                <img src="assets/images/logoIdiot.jpg" id="logo">
+                <img src="assets/images/Logo.png" id="logo">
             </div>
             <div id="right-header">
-                <a id="signup-button" class="header-button">Sign Up</a>
-                <a id="login-button" class="header-button" href="https://en.wikipedia.org/wiki/Login">Log In</a>
+                <div id="logged-out">
+                    <a id="signup-button" class="header-button" href="Register.html" >Registrera</a>
+                    <a id="login-button" class="header-button" href="LoginPage.html">Logga In</a>
+                </div>
+                <div id="logged-in">
+                    <a id="logout-button" class="header-button" href="Register.html" >Logga Ut</a>
+                    <a id="loggedInAccount" class="header-button"></a>
+                </div>
             </div>
         </header>
-        <div class="menu-container">
-            <ul>
-                <li>Html</li>
-                <li>css</li>
-                <li>javascript</li>
-            </ul>
+        <div id="menu-container" class="menu-container">
+
         </div>
         <div class="footer-container">
-
+            <p>&copy; 2025 Math Tutorials. All rights reserved.</p>
+            <nav>
+                <a href="/about">About</a> |
+                <a href="/contact">Contact</a> |
+                <a href="/privacy">Privacy Policy</a> |
+                <a href="/terms">Terms of Service</a>
+            </nav>
+            <p>Följ oss:
+                <a href="https://twitter.com/yourhandle">Twitter</a> |
+                <a href="https://facebook.com/yourpage">Facebook</a> |
+                <a href="https://github.com/yourrepo">GitHub</a>
+            </p>
         </div>
-        <div class="right-container">
-            <div class="ad-container">
-                <img src="assets/images/placeHolderForAd.jpg" class="ad">
-            </div>
-            <div class="ad-container">
-                <img src="assets/images/placeHolderForAd.jpg" class="ad">
-            </div>
-            <div class="ad-container">
-                <img src="assets/images/placeHolderForAd.jpg" class="ad">
-            </div>
+        <div id="right-container" class="right-container">
         </div>
         <div class="main-container">
-
+            <div class="game-container">
+                <input type="button" id="a1" name="a1" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
+                <input type="button" id="a2" name="a2" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
+                <input type="button" id="a3" name="a3" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
+                <br>
+                <input type="button" id="b1" name="b1" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
+                <input type="button" id="b2" name="b2" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
+                <input type="button" id="b3" name="b3" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
+                <br>
+                <input type="button" id="c1" name="c1" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
+                <input type="button" id="c2" name="c2" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
+                <input type="button" id="c3" name="c3" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
+            </div>
         </div>
     </div>
 </body>
