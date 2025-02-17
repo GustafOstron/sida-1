@@ -21,8 +21,8 @@ async function setAds() {
     const tempDiv = document.createElement('div');
     tempDiv.innerHTML = htmlText;
     const template = tempDiv.querySelector('template');
-    const maxAds = Math.floor(adCon.getBoundingClientRect().height / (253 + 80));
-    if(adCon.getBoundingClientRect().height > (253 + 80))
+    const maxAds = Math.floor(adCon.getBoundingClientRect().height / (480 + 80));
+    if(adCon.getBoundingClientRect().height > (480 + 80));
     for (let i = 0; i < maxAds; i++) {
         const clone = template.content.cloneNode(true);
         adCon.appendChild(clone);

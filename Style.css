@@ -124,7 +124,7 @@ body{
     padding: 5em;
     background-color: #f8f9fa;
     border-top: 1px solid #ddd;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .right-container{
@@ -137,9 +137,6 @@ body{
     text-align: center;
     margin-top: 5em;
     margin-bottom: 5em;
-    img{
-        /*height: 25em;*/
-    }
 }
 
 
@@ -148,4 +145,8 @@ body{
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.ad{
+    width: 15em;
 }
