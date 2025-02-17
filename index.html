@@ -16,11 +16,13 @@
             </div>
             <div id="right-header">
                 <div id="logged-out">
+                    <a id="FAQ-button" class="header-button" onclick="document.getElementById('main-content').src = 'components/TutorialPages/FAQ.html'" >FAQ</a>
                     <a id="signup-button" class="header-button" href="Register.html" >Registrera</a>
                     <a id="login-button" class="header-button" href="LoginPage.html">Logga In</a>
                 </div>
                 <div id="logged-in">
-                    <a id="logout-button" class="header-button" href="Register.html" >Logga Ut</a>
+                    <a id="FAQ-button2" class="header-button" onclick="document.getElementById('main-content').src = 'components/TutorialPages/FAQ.html'" >FAQ</a>
+                    <a id="logout-button" class="header-button" >Logga Ut</a>
                     <a id="loggedInAccount" class="header-button"></a>
                 </div>
             </div>
@@ -28,7 +30,7 @@
         <div id="menu-container" class="menu-container">
 
         </div>
-        <div class="footer-container">
+        <div id="footer" class="footer-container">
             <p>&copy; 2025 Math Tutorials. All rights reserved.</p>
             <nav>
                 <a href="/about">About</a> |
@@ -42,23 +44,8 @@
                 <a href="https://github.com/yourrepo">GitHub</a>
             </p>
         </div>
-        <div id="right-container" class="right-container">
-        </div>
-        <div class="main-container">
-            <div class="game-container">
-                <input type="button" id="a1" name="a1" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
-                <input type="button" id="a2" name="a2" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
-                <input type="button" id="a3" name="a3" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
-                <br>
-                <input type="button" id="b1" name="b1" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
-                <input type="button" id="b2" name="b2" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
-                <input type="button" id="b3" name="b3" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
-                <br>
-                <input type="button" id="c1" name="c1" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
-                <input type="button" id="c2" name="c2" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
-                <input type="button" id="c3" name="c3" value=" " class="game-square" onclick="if(value===' '){value=getActiveL()}">
-            </div>
-        </div>
+        <div id="right-container" class="right-container"></div>
+        <iframe id="main-content" onload="setupIframe(this)" src="components/TutorialPages/Algebra.html" scrolling="no"></iframe>
     </div>
 </body>
 </html>

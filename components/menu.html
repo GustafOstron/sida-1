@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <template>
-    <dl class="menu">
-        <dt>Biceps</dt>
-        <dd><a>Hammer Curls</a></dd>
-        <dd><a>Hammer Curls</a></dd>
-
-
-        <dt>Triceps</dt>
-        <dt>Underarmar</dt>
+    <button class="menu-button" id="menuToggleButton" onclick="menuToggle()">Menu</button>
+    <dl id="menu-wrapper" class="menu-wrapper">
+        <dt><button class="menu-button" onclick="document.getElementById('main-content').src = 'components/TutorialPages/Algebra.html'">Algebra</button></dt>
+        <dd><button class="menu-button" onclick="document.getElementById('main-content').src = 'components/TutorialPages/LinjarEkvationer.html'">Lösning av linjära ekvationer</button></dd>
+        <dd><button class="menu-button" onclick="document.getElementById('main-content').src = 'components/TutorialPages/Forenlingar.html'">Förenkling av uttryck</button></dd>
+        <dd><button class="menu-button" onclick="document.getElementById('main-content').src = 'components/TutorialPages/Polynom.html'">Polynom och faktorisering</button></dd>
+        <dt><button class="menu-button" onclick="document.getElementById('main-content').src = 'components/TutorialPages/Geometri.html'">Geometri</button></dt>
+        <dt><button class="menu-button" onclick="document.getElementById('main-content').src = 'components/TutorialPages/Sannolikhet.html'">Statistik och sannolikhet</button></dt>
+        <dt><button class="menu-button" onclick="document.getElementById('main-content').src = 'components/TutorialPages/Trigonomitri.html'">Trigonometri</button></dt>
     </dl>
 </template>
 </html>
